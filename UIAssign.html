@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Tralive</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <style>
+          *{
+          font-family: "Roboto",sans-serif;
+          }
+
+          /*NavBar CSS start*/
+        .topnav
+        {
+          display: flex;
+          justify-content: space-between;
+          background-color: white;
+          padding: 80px;
+        }
+        .topnav-right 
+        {
+          font-size: 20px;
+          display: flex;
+          text-align: center;
+        }
+        .topnav-right a , .header a , .cols a
+        {
+          color: navy;
+          text-decoration: none;
+          padding: 20px;
+        }
+        .topnav-right button , .column button
+        {
+          color: white;
+          padding: 10px;
+          background-color: orange;
+          border-radius: 10px;
+          font-size: 20px;
+        }
+        .menu{
+            display: none;
+        }
+         /*NavBar CSS end*/
+
+         /*Header CSS start*/
+        .header {
+          padding: 0px;
+          text-align: center;
+          background: white;
+          color: black;
+          font-size: large;
+        }
+        .header button{
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          background-color:navy;
+          text-decoration: none;
+          font-size: 17px;
+          border-radius: 10px;
+        }
+        /*Header CSS end*/
+
+        /*Events CSS start*/
+        .events
+        {
+          display: flex;
+          justify-content: space-between;
+          background-color: white;
+          padding: 80px;
+        }
+        .events div{
+            margin-right: 20px;
+        }
+        /*Events CSS end*/
+
+        /*About us CSS start*/
+       .row{
+           display: flex;
+           justify-content: space-between;
+           background-color: white;
+           margin-left: 50px;
+       }
+       .cols{
+           margin-left: 200px;
+           margin-right: 200px;
+       }
+       .cols p{
+           font-size: 20px;
+           color: lightslategrey;
+       }
+        /*About us CSS end*/
+
+        @media screen and (max-width:800px) {
+            /*NavBar MediaQuery start*/
+            .topnav,.topnav-right{
+                flex-direction: column;
+            }
+            .topnav{
+                padding: 0px;;
+            }
+            .topnav-right{
+                background-color: rgb(146, 142, 142);
+                height: 50px;
+                overflow: hidden;
+            }
+            .topnav-right:hover{
+                overflow: visible;
+                height: auto;
+            }
+            .topnav-right button
+            {
+            width: 180px;
+            margin:5px;
+            align-items: center;
+            margin: 0% auto;
+            font-size: 12px;
+            }
+
+            .menu{
+                display: inline;
+                text-align: right;
+            }
+            /*NavBar MediaQuery end*/
+            
+            /*Header MediaQuery start*/
+            .header {
+              padding:0px;
+              font-size: large;
+        }
+            /*Header MediaQuery end*/
+        }
+         
+        </style>
+    </head>
+    <body>
+        <div class="topnav">
+            <img src="logo1.png">
+            <div class="topnav-right">
+              <a href="#" class="menu"><b>MENU</b><i class="fas fa-bars"></i></a>
+              <a href="#search">Home</a>
+              <a href="#about">Event</a>
+              <a href="#about">About</a>
+              <a href="#about">Blog</a>
+              <a href="#about">Contact</a>
+              <button><i class="fa fa-phone"></i>  <b>+10(67) 678 2567</b></button>
+             </div>
+        </div>
+        <div class="header">
+            <h1><b>LifeLong Memories just a <br> few seconds away</b></h1>
+            <p>Let's start your journey with us, your dream will come true</p>
+            <button>Explore Destinations</button>
+        </div>
+        <img src="van.png" width="100%">
+        <div class="header">
+            <a href="#">Check Our Best Promotional Tour</a>
+            <h1><b>Upcoming Events</b></h1>
+        </div>
+
+        <div class="events">
+            <div>
+               <img src="service3.png">
+               <h3>Spitzberg</h3> <h3 style="color: lightskyblue;">$1200</h3>
+            </div>
+            <div>
+               <img src="service2.png">
+               <h3>Mega Turkey</h3>
+            </div>
+            <div>
+              <img src="service1.png">
+              <h3>Mega Turkey</h3>
+            </div>
+        </div>
+        
+        <div class="row">
+            <img src="about.png" alt="Snow" style="width:100%">
+            <div class="cols">
+                <a href="#">About Us</a>
+            <h1><b>Get Ready For Real Time Adventure</b></h1>
+            <p>Let's start your journey with us, your dream will come true. Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nosturd exercitation.
+            </p>
+            </div>
+        </div>
+
+    </body>
+</html>
